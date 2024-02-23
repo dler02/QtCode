@@ -37,25 +37,7 @@
     <addaction name="action_O"/>
     <addaction name="action_S"/>
    </widget>
-   <widget class="QMenu" name="menu_N">
-    <property name="title">
-     <string>新建(&amp;N)</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menu_O">
-    <property name="title">
-     <string>打开(&amp;O)</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menu_s">
-    <property name="title">
-     <string>保存(&amp;S)</string>
-    </property>
-   </widget>
    <addaction name="menu_F"/>
-   <addaction name="menu_N"/>
-   <addaction name="menu_O"/>
-   <addaction name="menu_s"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="action_N">

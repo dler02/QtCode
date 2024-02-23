@@ -7,10 +7,16 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // connect(ui->action_N, &QAction::triggered, this, &QMainWindow::ac)
+    connect(ui->action_N, &QAction::triggered, this, &MainWindow::action_N_Slot);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::action_N_Slot()
+{
+    ui->textEdit->clear();
+    this->setWindowTitle("新建文本文档.txt");
 }

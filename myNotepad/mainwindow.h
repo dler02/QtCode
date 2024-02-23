@@ -18,7 +18,7 @@ public:
     ~MainWindow();
 
 private slots:
-    // void action_N_Slot();
+    void action_N_Slot();
 
 private:
     Ui::MainWindow *ui;

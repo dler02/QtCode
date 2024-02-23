@@ -33,9 +33,6 @@ public:
     QTextEdit *textEdit;
     QMenuBar *menubar;
     QMenu *menu_F;
-    QMenu *menu_N;
-    QMenu *menu_O;
-    QMenu *menu_s;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -64,21 +61,12 @@ public:
         menubar->setGeometry(QRect(0, 0, 413, 21));
         menu_F = new QMenu(menubar);
         menu_F->setObjectName("menu_F");
-        menu_N = new QMenu(menubar);
-        menu_N->setObjectName("menu_N");
-        menu_O = new QMenu(menubar);
-        menu_O->setObjectName("menu_O");
-        menu_s = new QMenu(menubar);
-        menu_s->setObjectName("menu_s");
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
         MainWindow->setStatusBar(statusbar);
 
         menubar->addAction(menu_F->menuAction());
-        menubar->addAction(menu_N->menuAction());
-        menubar->addAction(menu_O->menuAction());
-        menubar->addAction(menu_s->menuAction());
         menu_F->addAction(action_N);
         menu_F->addAction(action_O);
         menu_F->addAction(action_S);
@@ -95,9 +83,6 @@ public:
         action_O->setText(QCoreApplication::translate("MainWindow", "\346\211\223\345\274\200(&O)", nullptr));
         action_S->setText(QCoreApplication::translate("MainWindow", "\344\277\235\345\255\230(&S)", nullptr));
         menu_F->setTitle(QCoreApplication::translate("MainWindow", "\346\226\207\344\273\266(&F)", nullptr));
-        menu_N->setTitle(QCoreApplication::translate("MainWindow", "\346\226\260\345\273\272(&N)", nullptr));
-        menu_O->setTitle(QCoreApplication::translate("MainWindow", "\346\211\223\345\274\200(&O)", nullptr));
-        menu_s->setTitle(QCoreApplication::translate("MainWindow", "\344\277\235\345\255\230(&S)", nullptr));
     } // retranslateUi
 
 };
